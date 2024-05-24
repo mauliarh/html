@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    transition: transform 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: gold;
+    text-decoration: none;
+    opacity: 10%;
+    transition: opacity 0.3s ease;
+}
+
+.fade-in:hover {
+    opacity: 1;
+}
+
+.keren-animation:hover {
+    transform: rotate(180deg);
+}

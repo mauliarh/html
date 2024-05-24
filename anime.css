@@ -1,0 +1,153 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #333; /* Warna latar belakang gelap */
+    color: #fff; /* Warna teks putih */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #111; /* Warna latar belakang header */
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Warna teks menu putih */
+    font-weight: bold;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+#daftar-anime {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: #222; /* Warna latar belakang artikel */
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Lebar 33.33% dengan margin */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Bayangan artikel */
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+article h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+article p {
+    margin-top: 10px;
+}
+
+article a {
+    display: block;
+    margin-top: 10px;
+    color: #ff9900; /* Warna teks tautan kuning */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111; /* Warna latar belakang footer */
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* CSS untuk tampilan responsif */
+#menu-toggle {
+    display: none; /* Sembunyikan input checkbox */
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#menu {
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease-in-out;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* CSS untuk tampilan responsif saat tombol hamburger diklik */
+#menu-toggle:checked + #menu {
+    left: 0;
+}
+
+article img:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+article p:hover{
+    color: gold;
+    transition: 0.8s;
+    font-family: 'arial';
+    
+}

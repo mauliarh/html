@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: black; /* Warna latar belakang navbar */
+        }
+
+        .navbar h1 {
+            color: white; /* Warna teks */
+            animation: moveText 10s linear infinite; /* Animasi teks bergerak */
+        }
+
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%); /* Teks bergerak dari kiri ke kanan */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>ini adalah jadwal Pelajaran Sekolah gajelas</h1>
+    </div>
+</body>
+</html>
